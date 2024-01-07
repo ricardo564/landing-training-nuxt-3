@@ -99,5 +99,13 @@
     "curly": 0,
     "no-console": "warn",
     "n/prefer-global/process": [0]
-  }
+  },
+  "globals": {
+    "$nuxt": true,
+    "defineProps": "readonly",
+    "defineEmits": "readonly",
+    "defineExpose": "readonly",
+    "withDefaults": "readonly",
+    "defineNuxtConfig": "readonly",
+  },
 }
