@@ -8,8 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint **/*.{ts,js,vue,html}",
+    "lint:fix": "eslint **/*.{ts,js,vue,html} --fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
