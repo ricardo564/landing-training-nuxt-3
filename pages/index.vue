@@ -57,6 +57,15 @@
             </nuxt-link>
           </div>
         </div>
+        <div class="flex min-h-screen h-full w-full items-center justify-center">
+          <div class="max-w-[30rem] w-full h-full max-h-[30rem] rounded-full overflow-hidden border-8 border-orange-600">
+            <img
+              src="https://cdn.discordapp.com/attachments/899855418065567746/1193614252859215983/image.png?ex=65ad5ae6&is=659ae5e6&hm=b160fdba75485f3bf045a42b13748adb35ab089e302851ec174a5143cf985285&"
+              class="w-42 h-42 object-cover mx-auto my-auto object-bottom"
+              alt="Logo"
+            >
+          </div>
+        </div>
       </section>
       <section
         class="grid min-h-screen max-h-[600px] sm:grid-cols-2 bg-white px-1 bg-[url('https://cdn.discordapp.com/attachments/1162465536077205535/1163838239749193818/image.png?ex=65a68b53&is=65941653&hm=9bf5c783080fe32bf13c6941efcf3e6f40436001d6537f78dfc23e837046cede&')] bg-fixed bg-contain bg-no-repeat z-[10]"
