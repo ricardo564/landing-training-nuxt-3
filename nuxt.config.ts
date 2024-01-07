@@ -8,4 +8,19 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  imports: {
+    autoImport: true,
+    dirs: [
+      './blocks',
+      './components',
+      './store',
+      './plugins',
+      './configs',
+      './utils',
+      './models',
+      './composables',
+      './services',
+      './static',
+    ],
+  },
 })
