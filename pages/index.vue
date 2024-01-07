@@ -68,23 +68,33 @@
         </div>
       </section>
       <section
-        class="grid min-h-screen max-h-[600px] sm:grid-cols-2 bg-white px-1 bg-[url('https://cdn.discordapp.com/attachments/1162465536077205535/1163838239749193818/image.png?ex=65a68b53&is=65941653&hm=9bf5c783080fe32bf13c6941efcf3e6f40436001d6537f78dfc23e837046cede&')] bg-fixed bg-contain bg-no-repeat z-[10]"
+        class="grid min-h-screen max-h-[600px] bg-white px-1 bg-[url('https://cdn.discordapp.com/attachments/1162465536077205535/1163838239749193818/image.png?ex=65a68b53&is=65941653&hm=9bf5c783080fe32bf13c6941efcf3e6f40436001d6537f78dfc23e837046cede&')] bg-fixed bg-contain bg-no-repeat z-[10]"
         id="section-2"
       >
-        <div class="my-auto grid gap-4 backdrop-blur bg-white/50 p-5 rounded-xl max-w-[29rem] md:ml-2">
-          <h1 class="text-4xl font-bold text-left max-w-[30rem]">
-            Welcome to Landing Training with <a href="https://nuxtjs.org">Nuxt.js!</a>
-          </h1>
-          <p class="text-left max-w-[30rem]">
-            A simple landing page to know how to configure / customize this project, using <a href="">Nuxt.js</a>.
-          </p>
-          <div class="flex items-start justify-start mt-8">
-            <nuxt-link
-              to=""
-              target="_blank"
-            >
-              Link
-            </nuxt-link>
+        <h2 class="text-4xl font-bold text-left mx-auto pt-16">
+          My Skills
+        </h2>
+        <div class="flex w-full flex-wrap gap-4">
+          <div
+            v-for="skill in skills"
+            :key="skill.id"
+            class="flex h-44 w-[17rem] relative border py-5"
+          >
+            <div class="flex flex-col h-full">
+              <div class="flex flex-col gap-4 absolute bottom-2 p-2">
+                <h3 class="text-2xl font-bold text-center">
+                  {{ skill.name }}
+                </h3>
+                <p class="mt-auto bg-red-500">
+                  {{ skill.level }}
+                </p>
+              </div>
+              <img
+                :src="skill.image"
+                class="absolute w-24 ml-auto right-2 top-2 h-24 object-cover mx-auto my-auto object-bottom"
+                alt="Logo"
+              >
+            </div>
           </div>
         </div>
       </section>
